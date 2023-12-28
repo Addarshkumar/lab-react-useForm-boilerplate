@@ -84,7 +84,7 @@ const Form = () => {
               required: 'Password is required',
               minLength: { value: 8, message: 'Minimum 8 characters required' 
             },pattern:{
-              value:/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()\-_=+{};:,<.>])(?=.*[a-zA-Z]).{8,}$/,
+              value: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{4,20}$/,
               message:"Invalid password"
             }
             })}
